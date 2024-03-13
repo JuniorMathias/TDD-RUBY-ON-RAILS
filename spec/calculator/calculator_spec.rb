@@ -1,6 +1,6 @@
 require 'calculator'
 
-describe Calculator do
+RSpec.describe Calculator do
 
   context 'diviside ' do
     it 'by 0' do
