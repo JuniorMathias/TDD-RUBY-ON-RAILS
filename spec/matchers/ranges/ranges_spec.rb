@@ -6,5 +6,5 @@ describe (1..5), 'Rangers' do
   end
 
   it { is_expected.to cover(3)}
-  it { is_expected.not_to cover(3)}
+  it { is_expected.not_to cover(6)}
 end

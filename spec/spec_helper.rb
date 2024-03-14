@@ -12,8 +12,28 @@
 # the additional setup, and require it from the spec files that actually need
 # it.
 #
+require_relative '../Helpers/helper'
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+
+  # config.before(:suite) do
+  #   puts ">>>>>Antes de toda a suíte de testes"
+  # end
+
+  # config.after(:suite) do
+  #   puts ">>>>>Depois de toda a suíte de testes"
+  # end
+
+  # config.before(:context) do
+  #   puts ">>>>>CONTEXT Antes de toda a suíte de testes"
+  # end
+
+  # config.after(:all) do
+  #   puts ">>>>> ALL Depois de toda a suíte de testes"
+  # end
+
+
+  config.include Helper
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
