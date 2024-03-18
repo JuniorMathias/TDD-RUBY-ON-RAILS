@@ -1,0 +1,12 @@
+$counter = 0
+
+describe "let" do 
+  let(:count) {$counter += 1}
+  it "memoriza o valor" do
+    expect(count).to eq(1) # primeira vez é carregado
+    expect(count).to eq(1) #segunda vez fica em cache
+  end
+  it "não é cacheado entre os testes" do
+    expect(count).to eq(2)
+  end
+end
