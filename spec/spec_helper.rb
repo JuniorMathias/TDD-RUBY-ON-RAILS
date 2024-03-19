@@ -32,6 +32,10 @@ RSpec.configure do |config|
   #   puts ">>>>> ALL Depois de toda a suíte de testes"
   # end
 
+  config.define_derived_metadata do |meta| 
+    meta[:aggreagate_failures] = true
+  end
+
 
   config.include Helper
   # rspec-expectations config goes here. You can use an alternate
